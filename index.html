@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA e Produtividade</title>
+    <meta name="description" content="Descubra como a Inteligência Artificial pode aumentar sua produtividade diária.">
+    <meta name="keywords" content="IA, Inteligência Artificial, Produtividade, Automação, Ferramentas">
+    <meta name="author" content="IA e Produtividade">
+    <link rel="stylesheet" href="styles.css">
+    <script src="chatbot.js" defer></script>
+    <script src="task_generator.js" defer></script>
+    <script src="articles.js" defer></script>
+    <script src="analytics.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f7;
+            color: #333;
+        }
+        header {
+            background: #005bb5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+            background: white;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #005bb5;
+            color: white;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IA e Produtividade</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="sobre">
+        <h2>Sobre o Projeto</h2>
+        <p>Descubra como a Inteligência Artificial pode aumentar sua produtividade diária.</p>
+        <img src="https://source.unsplash.com/800x400/?technology,ai" alt="Imagem sobre IA">
+    </section>
+    
+    <section id="blog">
+        <h2>Últimos Artigos</h2>
+        <div id="articles"></div>
+    </section>
+    
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato pelo e-mail: <a href="mailto:contato@seusite.com">contato@seusite.com</a></p>
+        <p>Ou siga-nos nas redes sociais:</p>
+        <div class="social-icons">
+            <a href="#" target="_blank">🔵 Facebook</a>
+            <a href="#" target="_blank">📸 Instagram</a>
+            <a href="#" target="_blank">🐦 Twitter</a>
+        </div>
+    </section>
+    
+    <section id="chatbot">
+        <h2>Chatbot de IA</h2>
+        <div id="chat-container">
+            <p>Converse com nossa IA sobre produtividade e automação!</p>
+            <input type="text" id="chat-input" placeholder="Digite sua pergunta...">
+            <button onclick="sendMessage()">Enviar</button>
+            <div id="chat-response"></div>
+        </div>
+    </section>
+    
+    <section id="task-generator">
+        <h2>Gerador de Tarefas Inteligente</h2>
+        <button onclick="generateTask()">Gerar Tarefa</button>
+        <p id="task-output"></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 IA e Produtividade. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
